@@ -96,7 +96,6 @@ class WatermarkApp:
         self.img.save(f'{watermarked_name}')
         self.success_text.set(f"Success!! File saved to {watermarked_name}")
 
-
     def display_img(self):
         f_size = (400, 400)
         factor = min(float(f_size[1]) / self.img_height, float(f_size[0]) / self.img_width)
