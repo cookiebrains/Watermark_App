@@ -92,7 +92,7 @@ class WatermarkApp:
         self.display_img()
 
     def save_image(self):
-        watermarked_name = self.photo_name[:-4] + "WM.jpg"
+        watermarked_name = self.photo_name[:-5] + "WM.jpg"
         self.img.save(f'{watermarked_name}')
         self.success_text.set(f"Success!! File saved to {watermarked_name}")
 
